@@ -21,15 +21,14 @@ PRIME = "prime"
 
 
 def is_prime(n):
-    if n < 2:
+    if n<3:
         return False
     else:
-        for i in range(2, n + 1):
+        for i in range(2, n):
             if n % i == 0:
                 return False
                 break
-            else:
-                return True
+        return True
 
 
 def filter_numbers(number_list, filter_type):
