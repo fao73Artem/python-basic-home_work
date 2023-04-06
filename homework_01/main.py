@@ -21,7 +21,7 @@ PRIME = "prime"
 
 
 def is_prime(n):
-    if n<3:
+    if n<2:
         return False
     else:
         for i in range(2, n):
@@ -48,3 +48,6 @@ def filter_numbers(number_list, filter_type):
         return [number for number in number_list if number % 2 == 0]
     elif filter_type == PRIME:
         return [number for number in number_list if is_prime(number) == True]
+
+
+
